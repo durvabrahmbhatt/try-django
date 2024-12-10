@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<div class="container">
+    <h1>Welcome to the Bookstore</h1>
+    <p>Explore a wide variety of books available at your fingertips!</p>
+
+    <!-- Button to explore books -->
+    <a href="{% url 'books' %}" class="explore-btn"=>Explore Books</a>
+
+    <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
+</div>
+</html>
